@@ -35,7 +35,7 @@ function HistoryListSlide({ history }: Props) {
 
   return (
     <div className="history-list">
-      <h2>検索履歴</h2>
+      <h2>検索履歴（スライド）</h2>
       <div className="swiper-wrapper-container">
         <Swiper
           modules={[Navigation, Pagination]}

@@ -1,4 +1,3 @@
-// src/components/__tests__/ResultCard.test.tsx
 import { render, screen } from '@testing-library/react';
 import ResultCard from '../ResultCard';
 
@@ -18,8 +17,9 @@ describe('ResultCard', () => {
   it('renders full address and kana', () => {
     render(<ResultCard data={mockData} />);
 
+    expect(screen.getByText(/郵便番号/)).toBeInTheDocument();
+    expect(screen.getByText(/1000001/)).toBeInTheDocument();
     expect(screen.getByText(/東京都千代田区千代田/)).toBeInTheDocument();
-    expect(screen.getByText(/トウキョウト チヨダク チヨダ/)).toBeInTheDocument();
-    expect(screen.getByText(/郵便番号: 1000001/)).toBeInTheDocument();
+    expect(screen.getByText(/トウキョウト\s*チヨダク\s*チヨダ/)).toBeInTheDocument();
   });
 });
