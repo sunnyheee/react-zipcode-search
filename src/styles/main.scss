@@ -1,0 +1,22 @@
+@import './reset.css';
+.inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 90%;
+}
+.main {
+  padding: 7rem 0;
+}
+.title {
+  text-align: center;
+  font-size: var(--fz32);
+}
+.description {
+  text-align: center;
+  font-size: var(--fz14);
+  color: #4a4a4a;
+  margin: 3rem 0;
+}
+.result-area {
+  margin-top: 4rem;
+}

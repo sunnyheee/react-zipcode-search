@@ -1,0 +1,32 @@
+.zip-form {
+  .input-area {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  input {
+    max-width: 300px;
+    flex: 1;
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+
+    &:hover {
+      background: #005fcc;
+    }
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}
